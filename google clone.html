@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;padding: 0px;
+        }
+        header {
+            display: flex;
+            height: 10px;
+            color: black;
+            justify-content:right;
+            padding: 3px;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0px 5px;
+        }
+
+        .signin {
+            background-color: #1a73e8;
+            color: white;
+            width: 66px;
+            height: 31px;
+            border: 1px solid #1a73e8;
+            border-radius: 3px;
+            cursor: pointer;}
+        .signin:hover{
+            background-color: #1a73e8d3;;
+        } 
+
+        .input {
+            border: 1px solid #c3b4b4;
+            width: 350px;
+            height: 5.5vh;
+            font-family: serif;
+            font-size: 20px;
+            border-radius: 24px;
+            box-shadow: -2px 2px 6px 0px rgb(192, 176, 176);
+        }
+
+        .container {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            height: 44vh;
+            
+            flex-direction: column;
+           
+            align-items: center;
+        }
+
+        .goo {
+            display: flex;
+            height: 40vh;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        div img {
+            width: 190px;
+            height: 70px;
+        }
+        .search{
+            height: 30px;
+             width: auto;
+             background-color: #c3b4b447;
+             border-radius: 4px;
+             padding: 2px;
+             border: 0px;
+             margin: 1px 5px;
+             cursor: pointer;}
+             a{
+             text-decoration: none; color: black;}
+        }
+        .search:hover{
+            background-color: #c3b4b4c5; }
+        footer{
+            background-color:#c3b4b469;  height:80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color:#5e5151b5 ;
+
+        }
+      
+    </style>
+    
+</head>
+<script>
+      
+            function myFunction() {
+   var x = document.getElementById("myInput");
+         document.getElementById("demo").innerhtml =x.value;
+}
+        
+    </script>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" style="text-decoration: none; color: black;">Gmail</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">Photos</a></li>
+                <button class="signin"> Sign In</button>
+               
+            </ul>
+        </nav>
+    </header>
+    <div class="goo">
+        <img src="http://www.stickpng.com/img/download/580b57fcd9996e24bc43c51f/image">
+    </div>
+    
+    <div class="container">
+        <div><input class="input" id="myinput" type="text" placeholder="         Search google or type a url" onsearch="myfunction()" > </div><br>
+        <div class="buttton">
+            <button class="search">Google search</button>
+            <button class="search">I'm feeling Lucky</button>
+            
+        </div>
+        <p id="demo"></p>
+    </div>
+    <footer>
+      
+    <div class="footer1"> <nav>
+        <ul>
+            <li>About</li>
+            <li>Advertsing</li>
+            <li>Bussiness</li>
+            <li>How google works</li>
+        </ul>
+        </nav>
+    </div>
+    <div class="footer2">
+      
+    <nav><ul>
+         <li>Privacy</li>
+         <li>Term</li>
+         <li>Setting</li>
+        
+        </ul></nav>
+        </div>
+    </footer>
+</body>
+
+</html>
